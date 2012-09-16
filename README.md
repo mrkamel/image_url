@@ -35,15 +35,11 @@ In action mailer views:
 
 Add this line to your application's Gemfile:
 
-    gem "image_url"
+    gem "image_url", :git => "https://github.com/mrkamel/image_url.git"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install image_url
 
 ## Contributing
 
