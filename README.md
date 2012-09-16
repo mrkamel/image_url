@@ -22,7 +22,7 @@ In usual views:
 In action mailer views:
 
 <pre>
-  image_url("images/image.png")
+  image_url("/images/image.png")
   # Generates a url by taking the asset host into account, if you set up one, e.g.
   => "http://assets.host.com/images/image.png"
 
