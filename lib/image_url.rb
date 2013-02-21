@@ -15,7 +15,7 @@ module ActionView
         asset_host = nil
 
         if ActionController::Base.asset_host.blank?
-          if @controller.is_a?(ActionMailer::Base)
+          if @controller.nil? || @controller.is_a?(ActionMailer::Base)
             asset_host = "http://#{ActionMailer::Base.default_url_options[:host]}"
           else
             asset_host = "#{request.protocol}#{request.host_with_port}"
